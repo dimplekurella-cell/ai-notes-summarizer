@@ -1,93 +1,160 @@
 # AI Notes Summarizer
 
-
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://code.swecha.org/jaruplaswetha/ai-notes-summarizer.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://code.swecha.org/jaruplaswetha/ai-notes-summarizer/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
 ## Name
-Choose a self-explaining name for your project.
+
+**AI Notes Summarizer** – An AI-powered application that converts lengthy notes and documents into concise, easy-to-read summaries.
+
+---
 
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+
+AI Notes Summarizer is a web-based application developed using **Python** and **Streamlit** that helps students, educators, and professionals quickly understand long pieces of text. The application allows users to upload a PDF document or paste text directly into the interface. It then processes the content and generates a concise summary along with important keywords and key points.
+
+The primary objective of this project is to reduce reading time and improve productivity by leveraging AI-based text summarization techniques.
+
+### Key Features
+
+* Upload PDF documents for summarization.
+* Paste custom text for instant analysis.
+* Generate concise AI-powered summaries.
+* Extract important keywords and key points.
+* User-friendly and interactive Streamlit interface.
+* Fast and lightweight solution for quick revisions.
+
+---
 
 ## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+
+**Hackathon Project** | **Python** | **Streamlit** | **AI/ML** | **Open Source**
+
+*(You can add GitLab or Shields.io badges later if required.)*
+
+---
 
 ## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+
+### Application Workflow
+
+1. User uploads a PDF file or pastes text.
+2. The application extracts the document content.
+3. The AI summarization engine processes the text.
+4. A concise summary and key points are generated.
+5. The summarized content is displayed to the user.
+
+**Suggested Screenshots:**
+
+* Home Page
+* File Upload Interface
+* Generated Summary Page
+* Keywords and Key Points Display
+
+---
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+
+### Prerequisites
+
+* Python 3.10 or higher
+* pip package manager
+
+### Clone the Repository
+
+```bash
+git clone https://code.swecha.org/jaruplaswetha/ai-notes-summarizer.git
+cd ai-notes-summarizer
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the Application
+
+```bash
+streamlit run app.py
+```
+
+After running the above command, open the local URL provided by Streamlit (usually `http://localhost:8501`) in your browser.
+
+---
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+
+1. Launch the AI Notes Summarizer application.
+2. Upload a PDF file or paste your notes into the text area.
+3. Click the **"Generate Summary"** button.
+4. View the generated summary and extracted key points.
+5. Use the summarized content for quick learning and revision.
+
+### Example
+
+**Input:** A 4-page chapter about Artificial Intelligence.
+
+**Output:**
+
+* Summary of the chapter in a few paragraphs.
+* Key concepts such as Machine Learning, Neural Networks, and NLP.
+* Important keywords for quick revision.
+
+---
 
 ## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+
+If you experience any issues or would like to suggest improvements, please create an issue in the repository or contact the project contributors.
+
+---
 
 ## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+
+Future improvements planned for this project:
+
+* Multi-language note summarization.
+* AI-generated quiz questions and flashcards.
+* Voice-to-text note processing.
+* Download summary as PDF.
+* Support for DOCX and image-based notes.
+* Personalized learning recommendations.
+
+---
 
 ## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+Contributions are welcome and appreciated!
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+To contribute:
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+1. Fork the repository.
+2. Create a new feature branch.
+3. Commit your changes.
+4. Push the branch and create a Merge Request.
+
+Please ensure that your code is properly tested and follows clean coding practices.
+
+---
+
+## Authors and Acknowledgment
+
+**Developed as part of Hackathon 2.**
+
+### Team Members
+
+* **Member 1:** Backend Development & AI Integration
+* **Member 2:** Frontend Development & UI/UX Design
+
+Special thanks to the hackathon organizers, mentors, and the open-source community for their support and inspiration.
+
+---
 
 ## License
-For open source projects, say how it is licensed.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+This project is released for educational and hackathon purposes. You are free to use, modify, and extend the project for learning and research.
+
+---
+
+## Project Status
+
+🚧 **Status:** Active Development
+
+AI Notes Summarizer is currently under active development as a hackathon project. Additional features and enhancements will be implemented in future versions based on user feedback and project requirements.
