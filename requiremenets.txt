@@ -1,0 +1,6 @@
+streamlit
+PyPDF2
+nltk
+sumy
+pandas
+numpy
