@@ -43,7 +43,7 @@ The primary objectives of AI Notes Summarizer are:
 
 * Generate concise summaries from PDF documents.
 * Allow users to summarize directly pasted text.
-* Reduce the time required to read long documents.
+* Reduce the time required to the read long documents.
 * Improve accessibility to important information.
 * Provide a simple and user-friendly interface.
 * Demonstrate the practical application of AI and NLP technologies.
