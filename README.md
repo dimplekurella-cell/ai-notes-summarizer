@@ -14,7 +14,7 @@ The primary objective of this project is to reduce reading time and improve prod
 
 ### Key Features
 
-* Upload PDF documents for summarization.
+* Upload PDF documents for the summarization.
 * Paste custom text for instant analysis.
 * Generate concise AI-powered summaries.
 * Extract important keywords and key points.
