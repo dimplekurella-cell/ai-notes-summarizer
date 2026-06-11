@@ -1,0 +1,20 @@
+[```toml
+[project]
+name = "ai-notes-summarizer"
+version = "1.0.0"
+description = "An AI-powered Notes Summarizer with Local AI (Ollama) and BYOK support."
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "streamlit",
+    "PyPDF2",
+    "nltk",
+    "sumy",
+    "pandas",
+    "numpy",
+    "ollama",
+    "python-dotenv",
+    "google-generativeai",
+]
+```
