@@ -1,6 +1,8 @@
 # AI Notes Summarizer
+LIVE DEMO
+http://localhost:8501/
 
-## Name
+##OVERVIEW
 
 **AI Notes Summarizer** – An AI-powered application that converts lengthy notes and documents into concise, easy-to-read summaries.The goal of this project is to reduce the time spent reading long notes and improve learning efficiency by providing quick and accurate summaries.
 
