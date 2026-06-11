@@ -4,3 +4,4 @@ nltk
 sumy
 pandas
 numpy
+ollama
