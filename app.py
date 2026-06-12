@@ -1,20 +1,31 @@
 import streamlit as st
 import nltk
-import ollama
+import os
+import google.generativeai as genai
+from dotenv import load_dotenv
 from PyPDF2 import PdfReader
 from deep_translator import GoogleTranslator
 st.set_page_config(page_title="AI Notes Summarizer", page_icon="📝")
-def summarize_with_ollama(text):
-    response = ollama.chat(
-        model="llama3.2",
-        messages=[
-            {
-                "role": "user",
-                "content": f"Summarize the following text in simple bullet points:\n\n{text}"
-            }
-        ]
-    )
-    return response["message"]["content"]
+load_dotenv()
+
+api_key = os.getenv("GOOGLE_API_KEY")
+
+if not api_key:
+    st.error("Google API Key not found. Please configure GOOGLE_API_KEY.")
+    st.stop()
+
+genai.configure(api_key=api_key)
+model = genai.GenerativeModel("gemini-2.5-flash")
+
+def summarize_with_ai(text):
+    prompt = f"""
+    Summarize the following text in simple bullet points:
+
+    {text}
+    """
+
+    response = model.generate_content(prompt)
+    return response.text
 try:
     nltk.data.find('tokenizers/punkt')
 except LookupError:
@@ -54,7 +65,7 @@ if st.button("Summarize"):
             if extracted:
                 text += extracted
 
-        summary = summarize_with_ollama(text)
+        summary = summarize_with_ai(text)
 
         if language != "English":
             summary = GoogleTranslator(
@@ -66,7 +77,7 @@ if st.button("Summarize"):
         st.write(summary)
 
     elif text_input:
-        summary = summarize_with_ollama(text_input)
+        summary = summarize_with_ai(text_input)
 
         if language != "English":
             summary = GoogleTranslator(
